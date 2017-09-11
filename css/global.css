@@ -1,0 +1,1413 @@
+.dongtu1 {
+    position: absolute;
+    top: 34px;
+    right: 50px;
+    z-index: 2;
+    width: 128px;
+    cursor: pointer;
+}
+
+/* 左导航 */
+.side-l {
+    width: 35px;
+    height: 332px;
+    position: fixed;
+    left: 100px;
+    bottom: 40px;
+    z-index: 2;
+}
+.side-l span {
+    display: block;
+    float: left;
+    text-align: center;
+    font: 12px/36px "microsoft yahei";
+    width: 37px;
+    height: 37px;
+    background-color: #DD2727;
+    color: #fff;
+    cursor: pointer;
+}
+.side-l div {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 1px;
+    text-align: center;
+    background-color: #626262;
+    color: #fff;
+    font: 11px/16px "microsoft yahei";
+    padding: 3px;
+    cursor: pointer;
+}
+.side-l .side-one {
+    background-color: #EA5F8D;
+}
+.side-l .side-two {
+    background-color: #0AA6E8;
+}
+.side-l .side-thr {
+    background-color: #64C333;
+}
+.side-l .side-for {
+    background-color: #F15453;
+}
+.side-l .side-fiv {
+    background-color: #19C8A9;
+}
+.side-l .side-six {
+    background-color: #F7A945;
+}
+.side-l .side-sev {
+    background-color: #000000;
+}
+
+
+#side-l-1:hover {
+    background-color:#EA5F8D ;
+}
+#side-l-2:hover {
+    background-color:#0AA6E8 ;
+}
+#side-l-3:hover {
+    background-color:#64C333 ;
+}
+#side-l-4:hover {
+    background-color:#F15453 ;
+}
+#side-l-5:hover {
+    background-color:#19C8A9 ;
+}
+#side-l-6:hover {
+    background-color:#F7A945 ;
+}
+#side-l-7:hover {
+    background-color:#000000 ;
+}
+#side-l-8:hover {
+    background-color:#FCCD4A ;
+}
+
+.topflash {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+    background-color: #DA2E2E;
+    display: none;
+}
+.topflash-in {
+    width: 1230px;
+    height: 50px;
+    margin: 0 auto;
+}
+.topflash img {
+    height: 50px;
+    float: left;
+}
+.topflash input {
+    float: left;
+}
+.flash-in {
+    width: 638px;
+    height: 30px;
+    margin: 10px 0;
+    padding-left: 10px;
+    border: 0;
+    outline-style: none;
+}
+.flash-but {
+    width: 90px;
+    height: 32px;
+    margin: 10px 0;
+    border: 0;
+    background-color: #C40000;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+
+body {
+    background-color: #F4F4F4;
+}
+
+body img {
+    transition:margin 0.2s;
+}
+.site-nav {
+    height: 33px;
+    background-color: #F2F2F2;
+    font-size: 12px;
+}
+
+.site-nav-l li, .site-nav-r li {
+    float: left;
+    line-height: 33px;
+    color: #999999;
+}
+
+.site-nav a {
+    display: block;
+    padding: 0 10px;
+    color: #999999;
+}
+
+.site-nav a:hover {
+    color: #c40000;
+}
+
+.site-nav s {
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid dashed dashed;
+    border-color: #bbb transparent transparent;
+    margin-bottom: 1px;
+    width: 0;
+}
+
+.site-nav a:hover s {
+    /*border-style: dashed dashed solid;*/
+    /*border-color: transparent transparent #bbb;*/
+    /*margin-bottom: 5px;*/
+    transition: translate .1s, transform .6s;
+    transform: rotate(180deg);
+    -ms-transform: rotate(117deg); /* IE 9 */
+    -moz-transform: rotate(117deg); /* Firefox */
+    -webkit-transform: rotate(180deg); /* Safari 和 Chrome */
+    -o-transform: rotate(117deg); /* Opera */
+
+    /*-webkit-transform:translate(0,-10px);*/
+    /*-moz-transform:translate(0,-10px);*/
+    /*-o-transform:translate(0,-10px);*/
+    /*-ms-transform:translate(0,-10px);*/
+    transform-origin: 50% 30%;
+    /*transition-property: opacity, transform;*/
+    /*transition-duration: 0.4s, 0.4s;*/
+}
+
+.site-nav-tb {
+    position: absolute;
+    width: 116px;
+    height: 50px;
+    border: 1px solid #EEEEEE;
+    background-color: #fff;
+    display: none;
+}
+
+.site-nav-tb a {
+    line-height: 25px;
+}
+
+.sib-nav-r-my:hover .site-nav-tb {
+    display: block;
+}
+
+.sib-nav-r-my:hover .site-nav-tb {
+    display: block;
+}
+
+.li-nav-help {
+    position: relative;
+}
+
+.li-nav-web {
+    position: relative;
+}
+
+.site-nav-help {
+    position: absolute;
+    top: 32px;
+    left: -66px;
+    width: 154px;
+    height: 166px;
+    border: 1px solid #EEEEEE;
+    background-color: #fff;
+    z-index: 5;
+    display: none;
+}
+
+.site-nav-help h6 {
+    line-height: 20px;
+}
+
+.site-nav .site-nav-r .site-nav-help a {
+    line-height: 20px;
+}
+
+.ul-site-nav-help {
+    margin: 3px 5px 5px;
+    border-bottom: 1px dashed red;
+    padding-bottom: 10px;
+}
+
+.li-nav-help:hover .site-nav-help {
+    display: block;
+}
+
+.site-nav-web {
+    position: absolute;
+    width: 116px;
+    height: 50px;
+    border: 1px solid #EEEEEE;
+    background-color: #fff;
+    display: none;
+}
+
+/*panner-begin  */
+.main-pannel {
+    width: 856px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+
+.main-pannel-l {
+    width: 583px;
+    height: 442px;
+    padding: 19px 30px;
+    background-color: #FFFFFF;
+}
+
+.main-pannel-l-l {
+    width: 80px;
+    float: left;
+    font: 700 14px/20px "microsoft yahei";
+    padding: 5px 0 0;
+}
+
+.main-pannel-l-r {
+    width: 500px;
+    padding: 7px 0 8px 0;
+    border-bottom: 1px dashed #E6E6E6;
+    margin-bottom: 3px;
+}
+
+.main-pannel-l-r a {
+    float: left;
+    padding-left: 10px;
+    font: 14px/22px "microsoft yahei";
+}
+
+.main-nav-l-b li:hover a {
+    color: #E54077;
+}
+
+.main-nav-l-b li:hover {
+    background-color: #FFFFFF;
+}
+
+.main-nav-l-b li:hover .main-pannel a {
+    color: #676767;
+}
+
+.main-nav-l-b li .main-pannel a:hover {
+    color: #E54077;
+}
+
+.main-pannel-r {
+    width: 200px;
+    height: 478px;
+    padding: 1px 5px;
+    background-color: #FAFAFA;
+}
+
+.main-pannel-r img {
+    width: 73px;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    height: 37px;
+    padding: 4px 9px 2px 0px;
+    overflow: hidden;
+}
+
+.main-nav-l-b .main-pannel-r li {
+    margin: 1px;
+    float: left;
+    background-color: #fff;
+}
+
+.main-pannel-r-b img {
+    width: 182px;
+    height: 87px;
+    padding: 2px 2px 0 0;
+    margin: 0;
+}
+
+.main-pannel-r img:hover {
+    transition: opacity .6s;
+    opacity: 0.8
+}
+
+/*site-nav end*/
+.header {
+    height: 130px;
+    background-color: #fff
+}
+
+.header-in {
+    width: 1290px;
+    margin: 0 auto
+}
+
+.logo {
+    background-image: url("../images/logo1.png");
+    width: 290px;
+    height: 130px;
+    overflow: hidden;
+}
+
+.logo a {
+    display: inline-block;
+    width: 240px;
+    height: 130px;
+    text-indent: -9999px;
+}
+
+.search-logo {
+    padding: 38px 50px 5px;
+}
+
+.search-input {
+    width: 483px;
+    height: 26px;
+    padding: 5px 3px 5px 5px;
+    border: 2px solid #C40000;
+    outline: none;
+    font: 14px/36px "microsoft yahei";
+    color: #666666;
+    vertical-align: middle;
+}
+
+.search-b {
+    display: inline-block;
+    width: 132px;
+    height: 40px;
+    border: 2px solid #C40000;
+    background-color: #C40000;
+    font: bold 18px "microsoft yahei";
+    color: #fff;
+    vertical-align: middle;
+}
+
+.search-hotw {
+    width: 625px;
+    height: 22px;
+    padding-left: 46px;
+}
+
+.search-hotw li {
+    float: left;
+    color: #999999;
+}
+
+.search-hotw a {
+    padding: 0 10px;
+    font: 14px "microsoft yahei";
+    color: #999999;
+}
+
+.header .red {
+    color: #C40000;
+}
+
+.search-hotw a:hover {
+    color: #C40000;
+}
+
+/*header end*/
+.main-nav {
+    background-color: #DC2726;
+    height: 36px;
+}
+
+.main-nav-in {
+    height: 36px;
+    margin: 0 auto;
+    background-color: #DC2726;
+}
+
+.main-nav-l {
+    width: 200px;
+    position: relative;
+}
+
+.main-nav-l-t {
+    padding-left: 30px;
+    font: 16px/36px "microsoft yahei";
+    background-color: #C50B0A;
+    color: #FDFAFA;
+}
+
+.main-nav-l-b {
+    width: 200px;
+    font: 14px/30px "microsoft yahei";
+    background-color: #EDEDED;
+    color: #071119;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    z-index: 2;
+}
+
+.con-lis {
+    height: 40px;
+}
+
+.main-nav-l-b li {
+    padding-left: 14px;
+}
+
+.main-nav-r li {
+    float: left;
+    font: 16px/36px "microsoft yahei";
+    position: relative;
+}
+
+.main-nav-r li a:hover a {
+    background-color: #EDEDED;
+    color: green;
+}
+
+.main-nav-r li a {
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+    background-color: #DC2726;
+    color: #FDFAFA;
+    z-index: 5;
+}
+
+.main-nav-r li:hover img {
+    transform: translate(0, -10px);
+    /*-webkit-transform:translate(0,-10px);*/
+    /*-moz-transform:translate(0,-10px);*/
+    /*-o-transform:translate(0,-10px);*/
+    /*-ms-transform:translate(0,-10px);*/
+
+    transition: opacity .6s, transform .6s;
+    /*transition-property: opacity, transform;*/
+    /*transition-duration: 0.4s, 0.4s;*/
+    opacity: 1;
+}
+
+.main-nav-r img {
+    width: 40px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -20px;
+    opacity: 0;
+}
+
+/*banner begin*/
+.baner {
+    height: 480px;
+    position: relative;
+}
+
+.banner-con {
+    position: relative;
+    width: 1130px;
+    height: 480px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.banner-con ul {
+    height: 480px;
+    width: 7050px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-con li {
+    height: 480px;
+    width: 1130px;
+    float: left;
+}
+
+.banner-con img {
+    width: 1130px;
+    height: 480px;
+    cursor: pointer;
+}
+
+.con-btn {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+
+.con-btn li {
+    float: left;
+    margin: 20px;
+    width: 22px;
+    height: 22px;
+    background: url("../images/banner-con/btn.png") no-repeat;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.con-btn .sel {
+    background-image: url("../images/banner-con/btn-sel.png");
+}
+
+.red {
+    color: #C40000;
+}
+
+/*banner end*/
+.yous h3 {
+    font: 600 16px/20px "microsoft yahei";
+    color: red;
+    text-align: center;
+    padding: 20px 0 5px;
+}
+
+.yous {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.yous-li li {
+    float: left;
+    padding: 10px 4px;
+    cursor: pointer;
+}
+
+.yous-li li:hover {
+    transition: opacity .5s;
+    opacity: 0.7
+}
+
+.big-y-l {
+    width: 488px;
+    height: 436px;
+    margin: 20px 0;
+}
+.big-y-l:hover {
+    transition: opacity .6s;
+    opacity: 0.8
+}
+.big-y-r li {
+    float: left;
+    width: 121px;
+    height: 108px;
+    padding: 1px 2px 1px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.big-y-r {
+    width: 742px;
+    margin-top: 18px;
+}
+
+.big-colone {
+    position: relative;
+    z-index: 0;
+    width: 120px;
+    height: 107px;
+    background-color: #333333;
+    opacity: 0.8;
+    color: #fff;
+    display: block;
+}
+
+.big-colone span {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    font: 30px/30px "microsoft yahei";
+}
+
+.big-colone h4 {
+    font: 700 12px/40px "microsoft yahei";
+    text-align: center;
+}
+
+.big-y-r .big-colone a {
+    display: block;
+    margin-left: 26px;
+    width: 62px;
+    height: 18px;
+    background-color: red;
+    font: 700 13px/18px "microsoft yahei";
+    text-align: center;
+    color: #fff;
+    border-radius: 40%;
+}
+
+.big-y-r li:hover .big-colone {
+    /*display: block;*/
+}
+#big-you .big-img img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 3;
+}
+
+.chaoliu li {
+    float: left;
+    width: 238px;
+    height: 513px;
+    background-color: pink;
+    margin: 0 8px 0 0;
+    list-style: none;
+    text-align: center;
+}
+
+.chaoliu li h3 {
+    font: 700 16px/36px "microsoft yahei";
+    color: #fff;
+    background-color: #DC2726;
+}
+
+.chaoliu li a {
+    display: block;
+    height: 238px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.chaoliu li a h4 {
+    font: 700 19px/20px "microsoft yahei";
+    padding-top: 10px;
+    color: #000;
+}
+
+.chaoliu li a p {
+    font: 500 12px/20px "microsoft yahei";
+    color: #969696;
+}
+
+.chaoliu li a s {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 140px;
+    height: 140px;
+    margin: 28px 44px;
+    background-color: #000;
+    opacity: .03;
+    border-radius: 70px;
+    z-index: 2;
+}
+
+.chaoliu li a img {
+    width: 140px;
+    height: 140px;
+    transition:transform 1s;
+}
+
+.chaoliu li a:hover img {
+    transform: scale(1.2);
+}
+
+.chaoliu li a i {
+    position: absolute;
+    top: 68px;
+    left: 46px;
+    z-index: 1;
+}
+
+.chaoliu li span {
+    display: block;
+    height: 1px;
+    background-color: #EDEDED;
+}
+
+.yous-d-banner {
+    margin: 20px auto;
+    position: relative;
+    width: 1230px;
+    height: 110px;
+    overflow: hidden;
+}
+
+.yous-d-banner img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -810px;
+}
+
+/*fashion begin*/
+.fashion {
+    height: 480px;
+    margin: 10px auto;
+}
+
+.fashion-t h4 {
+    float: left;
+    font: 400 18px/20px "microsoft yahei";
+    color: #050301;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 3px solid #EA5F8D;
+}
+
+.fashion-t {
+    height: 40px;
+}
+
+.fashion-t h4 span {
+    font: 400 14px/14px "microsoft yahei";
+}
+
+.fashion-t ul li {
+    float: left;
+    padding: 10px 12px;
+}
+
+.fashion-t ul li a {
+    display: block;
+    color: #151515;
+}
+
+.fashion-t ul li a:hover {
+    border-bottom: 1px solid #151515;
+}
+
+.fashion-l {
+    width: 246px;
+    cursor: pointer-;
+}
+
+.fashion-l-t {
+    position: relative;
+    width: 246px;
+}
+
+.fashion-l-t img {
+    width: 246px;
+}
+
+.fashion-l-t a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 246px;
+    padding: 5px 0;
+    font: 14px/20px "microsoft yahei";
+    background-color: rgba(238, 236, 234, .8);
+}
+
+.fashion-l-b {
+    width: 246px;
+    text-align: center;
+    background-color: #EA5F8D;
+}
+
+.fashion-l-b h3 {
+    font: 700 20px/25px "microsoft yahei";
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.fashion-l-b p {
+    font: 20px/25px "microsoft yahei";
+    color: #FFFFFF;
+}
+
+.fashion-l-b img {
+    padding-top: 18px;
+}
+
+.fashion-r-l {
+    width: 735px;
+    height: 440px;
+}
+
+.fashion-r-l li {
+    padding: 0 1px 1px 0;
+    float: left;
+    position: relative;
+}
+
+.fashion-r-l li a {
+    display: block;
+    width: 244px;
+    height: 221px;
+    background: #fff;
+}
+
+.fashion-r-l li h3 {
+    font: 20px/25px "microsoft yahei";
+    color: #000000;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.fashion-r-l li p {
+    font: 14px/25px "microsoft yahei";
+    color: #EA5F8D;
+    position: absolute;
+    top: 44px;
+    left: 10px;
+}
+
+.fashion-r-l li img {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 154px;
+}
+
+.fashion-r-r {
+    width: 249px;
+    height: 147px;
+}
+
+.fashion-r-r ul {
+    height: 440px;
+    width: 249px;
+}
+
+.fashion-r-r li {
+    width: 249px;
+    padding: 0 0 1px 0;
+    float: left;
+    position: relative;
+}
+
+.fashion-r-r li a {
+    display: block;
+    width: 249px;
+    height: 147px;
+    background: #fff;
+}
+
+.fashion-r-r li h3 {
+    font: 20px/25px "microsoft yahei";
+    color: #000000;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 2;
+}
+
+.fashion-r-r li p {
+    font: 14px/25px "microsoft yahei";
+    color: #EA5F8D;
+    position: absolute;
+    top: 44px;
+    left: 10px;
+    z-index: 2;
+}
+
+.fashion-r-r li img {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 100px;
+}
+
+/*fashion end*/
+.connent {
+    height: 10px;
+}
+.fashion-l-t:hover{
+    transition: opacity .6s;
+    opacity: 0.8
+}
+.fashion-r-l li:hover img {
+
+    margin-right: 2px;
+}
+.fashion-r-r li:hover img {
+    margin-right: 2px;
+}
+/*play-begin*/
+.play .play-l-b {
+    background-color: #0AA6E8;
+}
+
+.play .play-r-li-b a {
+    width: 489px;
+}
+
+.play .play-r-li-b h3 {
+    font: 700 20px "microsoft yahei";
+    top: 30px;
+    left: 40px;
+}
+
+.play .play-r-li-b h4 {
+    font: 20px/25px "microsoft yahei";
+    color: #000000;
+    position: absolute;
+    top: 56px;
+    left: 40px;
+}
+
+.play .play-r-li-b p {
+    top: 76px;
+    left: 40px;
+}
+
+.play .play-r-li-b img {
+    width: 195px;
+}
+
+.play .play-r a {
+    height: 221px;
+}
+
+.play .play-r img {
+    width: 145px;
+}
+
+.play .fashion-t h4 {
+    border-color: #0AA6E8;
+}
+
+#play p {
+    color: #0AA6E8;
+}
+
+/*health begin*/
+.health .fashion-t h4 {
+    border-color: #64C333;
+}
+
+#health p {
+    color: #64C333;
+}
+
+.health .fashion-l-b {
+    background-color: #64C333;
+}
+
+/*home begin*/
+#home .fashion-r-r a {
+    height: 110px;
+}
+
+.home .fashion-t h4 {
+    border-color: #F15453;
+}
+
+#home p {
+    color: #F15453;
+}
+
+.home .fashion-l-b {
+    background-color: #F15453;
+}
+
+/*home end*/
+/*outdoors begin*/
+.outdoors .fashion-t h4 {
+    border-color: #19C8A9;
+}
+
+#outdoors p {
+    color: #19C8A9;
+}
+
+.outdoors .fashion-l-b {
+    background-color: #19C8A9;
+}
+
+/*outdoors end*/
+/*baby begin*/
+.baby .fashion-t h4 {
+    border-color: #F7A945;
+}
+
+#baby p {
+    color: #F7A945;
+}
+
+.baby .fashion-l-b {
+    background-color: #F7A945;
+}
+
+/*like begin*/
+.like-t {
+    text-align: center;
+}
+
+.like-t h4 {
+    font: 18px/26px "microsoft yahei";
+    padding-bottom: 20px;
+}
+
+.like ul {
+    margin: 0 auto;
+    width: 1230px;
+    height: 336px;
+}
+
+.like li {
+    float: left;
+    width: 239px;
+    height: 326px;
+    margin: 0 8px 0 0;
+    position: relative;
+    background-color: #fff;
+}
+
+.like .last {
+    margin-right: 0;
+}
+
+.like li img {
+    width: 239px;
+    position: absolute;
+}
+
+.like .like-img {
+    width: 239px;
+    height: 239px;
+}
+
+.like li a:hover img {
+    margin-top: 2px;
+
+}
+
+.like li p {
+    padding: 14px 14px 12px 12px;
+    width: 216px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.like li .prices {
+    padding-left: 12px;
+    color: #FF1F00;
+    font-size: 14px;
+}
+
+.like-price-int {
+    font-size: 16px;
+}
+
+.like-li-shop span {
+    float: left;
+    width: 239px;
+    height: 20px;
+    position: relative;
+}
+
+.like-li-shop span .shop-t {
+    width: 169px;
+    position: absolute;
+    top: -36px;
+    left: 34px;
+}
+
+.like-li-shop span .shop-b {
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 74px;
+}
+
+.like-li-shop .shop-p p {
+    margin-top: 20px;
+    text-align: center;
+    font: 500 16px/30px "microsoft yahei";
+    padding-bottom: 0px;
+}
+
+.like-li-shop .shop-p {
+    text-align: center;
+}
+
+.like-li-shop s {
+    text-decoration: none;
+    color: #999999;
+}
+
+.like-ul .like-li-shop a:hover .shop-img img {
+    margin: 0;
+}
+
+/*footer-begin*/
+.footer-logo {
+    background-color: #fff;
+}
+
+.footer-logo-t {
+    height: 45px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-logo ul {
+    height: 110px;
+    background: url("../images/footer/slogan.jpg");
+    border-bottom: 1px solid #EDEDED;
+}
+
+.footer-logo li a {
+    width: 307px;
+    height: 110px;
+    float: left;
+}
+
+.guide {
+    position: relative;
+}
+
+.guide dl {
+    float: left;
+    width: 190px;
+    padding: 20px 30px 20px 30px;
+}
+
+.guide dl dt {
+    font: 700 16px/36px "microsoft yahei";
+}
+
+.guide dl dd a {
+    color: #8B8B8B;
+    font-size: 12px;
+}
+
+.mobeltm {
+    margin: 30px;
+}
+
+.mobeltm a {
+    float: left;
+}
+
+.mobeltm h4 {
+    font: 700 16px/36px "microsoft yahei";
+}
+
+.cat-black {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+.
+}
+
+.foot-b {
+    background-color: #000000;
+    height: 180px;
+    border-top: 2px solid #C40000;
+}
+
+.foot-b-in ul {
+    width: 1230px;
+    height: 25px;
+    padding: 5px;
+}
+
+.foot-b-in ul li {
+    float: left;
+    line-height: 30px;
+}
+
+.foot-b-in ul li a {
+    font: 12px/30px "microsoft yahei";
+    color: #fff;
+    padding: 0 5px;
+}
+
+.foot-last {
+    padding-left: 10px;
+}
+
+.foot-last ul {
+    width: 1230px;
+    height: 20px;
+    padding: 2px;
+}
+
+.foot-last ul li {
+    float: left;
+    line-height: 20px;
+    padding: 0 40px 0 0;
+}
+
+.foot-last ul li a {
+    color: #A4A4A4;
+    font-size: 12px;
+}
+
+.foot-last p {
+    font-size: 12px;
+}
+
+.foot-ico {
+    margin: 5px 10px;
+}
+
+.foot-ico img {
+    padding-right: 20px;
+}
+/* 右导航 */
+.side-r {
+    width: 35px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+}
+
+.side-r-1 {
+    margin-top: 160px;
+    width: 35px;
+    height: 35px;
+    background: url("../images/side/cat.png") 0 0 no-repeat;
+    cursor: pointer;
+}
+
+.side-r-1:hover {
+    background-color: #C40000;
+}
+
+.side-r-2 {
+    width: 35px;
+    height: 100px;
+    position: relative;
+}
+
+.side-r-2-in {
+    width: 27px;
+    height: 65px;
+    margin: 8px 4px;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #444444;
+    padding-top: 35px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.side-r-2-in img {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+
+.side-r-2:hover {
+    background-color: #C40000;
+}
+
+.side-r-3-1:hover {
+    background-color: #C40000;
+}
+
+.side-r-3-2:hover {
+    background-color: #C40000;
+}
+
+.side-r-3-3:hover {
+    background-color: #C40000;
+}
+
+.side-r-3-4:hover {
+    background-color: #C40000;
+}
+
+.side-r-3-5:hover {
+    background-color: #C40000;
+}
+
+.side-r-2-in:hover img {
+    left: -45px;
+}
+
+.side-r-3 div {
+    width: 35px;
+    height: 35px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.side-r .side-r-4 {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.side-r-4 div {
+    width: 35px;
+    height: 35px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.side-r-4-1:hover {
+    background-color: #C40000;
+}
+
+.side-r-4-2:hover {
+    background-color: #C40000;
+}
+
+.side-r-4-3:hover {
+    background-color: #C40000;
+}
+
+.side-r div {
+    position: relative;
+}
+
+.side-r s {
+    position: absolute;
+    left: -90px;
+    top: 0px;
+    width: 90px;
+    height: 35px;
+    background-color: #666666;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font: 12px/35px "microsoft yahei";
+}
+
+.side-r i {
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    font: 32px/35px "microsoft yahei";
+    color: #666666;
+}
+
+.side-r-4-2 span {
+    position: absolute;
+    top: -170px;
+    left: -160px;
+}
+
+.side-r-4-2 span img {
+    position: absolute;
+}
+
+.side-er-1 {
+    top: 0px;
+    left: 0px;
+}
+
+.side-er-2 {
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 30px;
+}
+
+.side-er-3 {
+    top: 150px;
+    left: 10px;
+}
