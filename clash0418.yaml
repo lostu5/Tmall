@@ -5,43 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: TW_494, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: TW_215, server: 60.249.3.125, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: TW_214 |57.62Mb, server: 60.249.3.125, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: TW_191 |26.57Mb, server: 211.72.35.153, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: TW_493, server: 211.72.35.153, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: CN_8du.shop 27, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
+  - {name: JP-Openit.ml, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: KR-Openit.ml, server: 2.hmykr1.tk, port: 58739, type: trojan, password: 7b567rw1Bp, sni: 2.hmykr1.tk, skip-cert-verify: true, udp: true}
+  - {name: HK-Openit.ml, server: hk5.fdns.cloudlink123.com, port: 80, type: vmess, uuid: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk5.fdns.cloudlink123.com}, udp: true}
+  - {name: CN_8du.shop 3, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
+  - {name: Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
+  - {name: CN_8du.shop 36, server: 120.232.192.250, port: 3384, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb, server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW_494
-      - TW_215
-      - TW_214 |57.62Mb
-      - TW_191 |26.57Mb
-      - TW_493
+      - CN_8du.shop 27
+      - JP-Openit.ml
+      - KR-Openit.ml
+      - HK-Openit.ml
+      - CN_8du.shop 3
+      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - CN_8du.shop 36
+      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - TW_494
-      - TW_215
-      - TW_214 |57.62Mb
-      - TW_191 |26.57Mb
-      - TW_493
+      - CN_8du.shop 27
+      - JP-Openit.ml
+      - KR-Openit.ml
+      - HK-Openit.ml
+      - CN_8du.shop 3
+      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - CN_8du.shop 36
+      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW_494
-      - TW_215
-      - TW_214 |57.62Mb
-      - TW_191 |26.57Mb
-      - TW_493
+      - CN_8du.shop 27
+      - JP-Openit.ml
+      - KR-Openit.ml
+      - HK-Openit.ml
+      - CN_8du.shop 3
+      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - CN_8du.shop 36
+      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +72,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - TW_494
-      - TW_215
-      - TW_214 |57.62Mb
-      - TW_191 |26.57Mb
-      - TW_493
+      - CN_8du.shop 27
+      - JP-Openit.ml
+      - KR-Openit.ml
+      - HK-Openit.ml
+      - CN_8du.shop 3
+      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - CN_8du.shop 36
+      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +90,41 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - TW_494
-      - TW_215
-      - TW_214 |57.62Mb
-      - TW_191 |26.57Mb
-      - TW_493
+      - CN_8du.shop 27
+      - JP-Openit.ml
+      - KR-Openit.ml
+      - HK-Openit.ml
+      - CN_8du.shop 3
+      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - CN_8du.shop 36
+      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - TW_494
-      - TW_215
-      - TW_214 |57.62Mb
-      - TW_191 |26.57Mb
-      - TW_493
+      - CN_8du.shop 27
+      - JP-Openit.ml
+      - KR-Openit.ml
+      - HK-Openit.ml
+      - CN_8du.shop 3
+      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - CN_8du.shop 36
+      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TW_494
-      - TW_215
-      - TW_214 |57.62Mb
-      - TW_191 |26.57Mb
-      - TW_493
+      - CN_8du.shop 27
+      - JP-Openit.ml
+      - KR-Openit.ml
+      - HK-Openit.ml
+      - CN_8du.shop 3
+      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - CN_8du.shop 36
+      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - TW_494
-      - TW_215
-      - TW_214 |57.62Mb
-      - TW_191 |26.57Mb
-      - TW_493
+      - CN_8du.shop 27
+      - JP-Openit.ml
+      - KR-Openit.ml
+      - HK-Openit.ml
+      - CN_8du.shop 3
+      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - CN_8du.shop 36
+      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
