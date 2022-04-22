@@ -5,39 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: KR_926 | 9.03Mb, server: v2-5.godlight.xyz, port: 39783, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
-  - {name: US_2962 | 2.92Mb, server: los2-cn2.v2ce.com, port: 443, type: trojan, password: 1Qfea1eL3zCALPJm, sni: los2-cn2.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: US_2970 | 8.47Mb, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: RU_1254 |13.37Mb, server: 217.30.10.66, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: US_3044 |28.84Mb, server: hmysanjose.tk, port: 443, type: trojan, password: 3bee5988-629f-4da1-a5f1-85f6fc83c8df, sni: hmysanjose.tk, skip-cert-verify: true, udp: true}
+  - {name: US_3037 | 8.45Mb, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: 869d7217-8ad4-4265-be69-5a848afadebf, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: RU_193 | 2.03Mb, server: 217.30.10.66, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3788, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3771, server: lzq01.ugatk.ml, port: 443, type: vmess, uuid: 2b6e2731-3f17-4679-a8e1-70fa6ace0df9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /a8b0dd0a562e30/, ws-headers: {Host: lzq01.ugatk.ml}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_3751, server: v2-5.godlight.xyz, port: 39783, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_1089, server: 1.hmykr1.tk, port: 42045, type: trojan, password: ynr804OK7t, sni: 1.hmykr1.tk, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb, server: doin.node003.insnow.xyz, port: 9933, type: trojan, password: 9a057015-6dfb-4b57-9f69-877423598741, sni: doin.node003.insnow.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_444, server: in04.dns2333.xyz, port: 64078, type: vmess, uuid: a34d6fe7-7ab0-3071-81f7-e24c8edd2acb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: in04.dns2333.xyz}, udp: true}
+  - {name: GB_483 |11.10Mb, server: 2.hmykr1.tk, port: 58739, type: trojan, password: 7b567rw1Bp, sni: 2.hmykr1.tk, skip-cert-verify: true, udp: true}
+  - {name: _04 |12.05Mb, server: 147.182.151.24, port: 20110, type: ss, cipher: aes-256-cfb, password: f5e0ecc4e6b84a668ee9ed98e0a30ca9, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - KR_926 | 9.03Mb
-      - US_2962 | 2.92Mb
-      - US_2970 | 8.47Mb
-      - RU_1254 |13.37Mb
+      - US_3044 |28.84Mb
+      - US_3037 | 8.45Mb
+      - RU_193 | 2.03Mb
+      - Relay_🇺🇸US-🇺🇸US_3788
+      - Relay_🇺🇸US-🇺🇸US_3771
+      - Relay_🇺🇸US-🇺🇸US_3751
+      - Relay_🇯🇵JP-🇯🇵JP_1089
+      - Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb
+      - Relay_🇨🇳CN-🇺🇸US_444
+      - GB_483 |11.10Mb
+      - _04 |12.05Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - KR_926 | 9.03Mb
-      - US_2962 | 2.92Mb
-      - US_2970 | 8.47Mb
-      - RU_1254 |13.37Mb
+      - US_3044 |28.84Mb
+      - US_3037 | 8.45Mb
+      - RU_193 | 2.03Mb
+      - Relay_🇺🇸US-🇺🇸US_3788
+      - Relay_🇺🇸US-🇺🇸US_3771
+      - Relay_🇺🇸US-🇺🇸US_3751
+      - Relay_🇯🇵JP-🇯🇵JP_1089
+      - Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb
+      - Relay_🇨🇳CN-🇺🇸US_444
+      - GB_483 |11.10Mb
+      - _04 |12.05Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - KR_926 | 9.03Mb
-      - US_2962 | 2.92Mb
-      - US_2970 | 8.47Mb
-      - RU_1254 |13.37Mb
+      - US_3044 |28.84Mb
+      - US_3037 | 8.45Mb
+      - RU_193 | 2.03Mb
+      - Relay_🇺🇸US-🇺🇸US_3788
+      - Relay_🇺🇸US-🇺🇸US_3771
+      - Relay_🇺🇸US-🇺🇸US_3751
+      - Relay_🇯🇵JP-🇯🇵JP_1089
+      - Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb
+      - Relay_🇨🇳CN-🇺🇸US_444
+      - GB_483 |11.10Mb
+      - _04 |12.05Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -56,10 +84,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - KR_926 | 9.03Mb
-      - US_2962 | 2.92Mb
-      - US_2970 | 8.47Mb
-      - RU_1254 |13.37Mb
+      - US_3044 |28.84Mb
+      - US_3037 | 8.45Mb
+      - RU_193 | 2.03Mb
+      - Relay_🇺🇸US-🇺🇸US_3788
+      - Relay_🇺🇸US-🇺🇸US_3771
+      - Relay_🇺🇸US-🇺🇸US_3751
+      - Relay_🇯🇵JP-🇯🇵JP_1089
+      - Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb
+      - Relay_🇨🇳CN-🇺🇸US_444
+      - GB_483 |11.10Mb
+      - _04 |12.05Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -70,29 +105,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - KR_926 | 9.03Mb
-      - US_2962 | 2.92Mb
-      - US_2970 | 8.47Mb
-      - RU_1254 |13.37Mb
+      - US_3044 |28.84Mb
+      - US_3037 | 8.45Mb
+      - RU_193 | 2.03Mb
+      - Relay_🇺🇸US-🇺🇸US_3788
+      - Relay_🇺🇸US-🇺🇸US_3771
+      - Relay_🇺🇸US-🇺🇸US_3751
+      - Relay_🇯🇵JP-🇯🇵JP_1089
+      - Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb
+      - Relay_🇨🇳CN-🇺🇸US_444
+      - GB_483 |11.10Mb
+      - _04 |12.05Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - KR_926 | 9.03Mb
-      - US_2962 | 2.92Mb
-      - US_2970 | 8.47Mb
-      - RU_1254 |13.37Mb
+      - US_3044 |28.84Mb
+      - US_3037 | 8.45Mb
+      - RU_193 | 2.03Mb
+      - Relay_🇺🇸US-🇺🇸US_3788
+      - Relay_🇺🇸US-🇺🇸US_3771
+      - Relay_🇺🇸US-🇺🇸US_3751
+      - Relay_🇯🇵JP-🇯🇵JP_1089
+      - Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb
+      - Relay_🇨🇳CN-🇺🇸US_444
+      - GB_483 |11.10Mb
+      - _04 |12.05Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - KR_926 | 9.03Mb
-      - US_2962 | 2.92Mb
-      - US_2970 | 8.47Mb
-      - RU_1254 |13.37Mb
+      - US_3044 |28.84Mb
+      - US_3037 | 8.45Mb
+      - RU_193 | 2.03Mb
+      - Relay_🇺🇸US-🇺🇸US_3788
+      - Relay_🇺🇸US-🇺🇸US_3771
+      - Relay_🇺🇸US-🇺🇸US_3751
+      - Relay_🇯🇵JP-🇯🇵JP_1089
+      - Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb
+      - Relay_🇨🇳CN-🇺🇸US_444
+      - GB_483 |11.10Mb
+      - _04 |12.05Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -108,10 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - KR_926 | 9.03Mb
-      - US_2962 | 2.92Mb
-      - US_2970 | 8.47Mb
-      - RU_1254 |13.37Mb
+      - US_3044 |28.84Mb
+      - US_3037 | 8.45Mb
+      - RU_193 | 2.03Mb
+      - Relay_🇺🇸US-🇺🇸US_3788
+      - Relay_🇺🇸US-🇺🇸US_3771
+      - Relay_🇺🇸US-🇺🇸US_3751
+      - Relay_🇯🇵JP-🇯🇵JP_1089
+      - Relay_🇮🇳IN-🇮🇳IN_88 | 5.31Mb
+      - Relay_🇨🇳CN-🇺🇸US_444
+      - GB_483 |11.10Mb
+      - _04 |12.05Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
