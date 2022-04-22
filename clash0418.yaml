@@ -5,55 +5,91 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_8du.shop 27, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: JP-Openit.ml, server: jgwdj2.gaox.ml, port: 443, type: trojan, password: 86231db5-96d0-4271-9977-cae3a0cba614, sni: jgwdj2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: KR-Openit.ml, server: 2.hmykr1.tk, port: 58739, type: trojan, password: 7b567rw1Bp, sni: 2.hmykr1.tk, skip-cert-verify: true, udp: true}
-  - {name: HK-Openit.ml, server: hk5.fdns.cloudlink123.com, port: 80, type: vmess, uuid: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk5.fdns.cloudlink123.com}, udp: true}
-  - {name: CN_8du.shop 3, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
-  - {name: Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
+  - {name: 🇨🇳, server: cn1.relay.iepl.pw, port: 50500, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
   - {name: CN_8du.shop 36, server: 120.232.192.250, port: 3384, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb, server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
+  - {name: CN_423 | 9.90Mb, server: 120.232.192.250, port: 3384, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: TW_1488 | 1.66Mb, server: tw.node001.insnow.xyz, port: 12001, type: trojan, password: 9a057015-6dfb-4b57-9f69-877423598741, sni: tw.node001.insnow.xyz, skip-cert-verify: true, udp: true}
+  - {name: 🇨🇳 2, server: cn1.relay.iepl.pw, port: 50700, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
+  - {name: 🇨🇳 3, server: cn1.relay.iepl.pw, port: 50400, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
+  - {name: 🇨🇳 4, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
+  - {name: CN_412 |10.48Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_415 |10.72Mb, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_410 | 9.68Mb, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_405 |10.70Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_395 |10.89Mb, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_416 |11.16Mb, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_382 |10.89Mb, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_398 |10.70Mb, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: HK-Openit.ml, server: hk5.fdns.cloudlink123.com, port: 80, type: vmess, uuid: 3f6006ca-e8ba-49d5-af9d-f4806dd36e09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk5.fdns.cloudlink123.com}, udp: true}
+  - {name: CN_379 | 8.34Mb, server: cn1.relay.iepl.pw, port: 50200, type: ss, cipher: aes-128-gcm, password: 0f77db87-854c-428c-a725-c56f548fcc1a, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_8du.shop 27
-      - JP-Openit.ml
-      - KR-Openit.ml
-      - HK-Openit.ml
-      - CN_8du.shop 3
-      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - 🇨🇳
       - CN_8du.shop 36
-      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
+      - CN_423 | 9.90Mb
+      - TW_1488 | 1.66Mb
+      - 🇨🇳 2
+      - 🇨🇳 3
+      - 🇨🇳 4
+      - CN_412 |10.48Mb
+      - CN_415 |10.72Mb
+      - CN_410 | 9.68Mb
+      - CN_405 |10.70Mb
+      - CN_395 |10.89Mb
+      - CN_416 |11.16Mb
+      - CN_382 |10.89Mb
+      - CN_398 |10.70Mb
+      - HK-Openit.ml
+      - CN_379 | 8.34Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_8du.shop 27
-      - JP-Openit.ml
-      - KR-Openit.ml
-      - HK-Openit.ml
-      - CN_8du.shop 3
-      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - 🇨🇳
       - CN_8du.shop 36
-      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
+      - CN_423 | 9.90Mb
+      - TW_1488 | 1.66Mb
+      - 🇨🇳 2
+      - 🇨🇳 3
+      - 🇨🇳 4
+      - CN_412 |10.48Mb
+      - CN_415 |10.72Mb
+      - CN_410 | 9.68Mb
+      - CN_405 |10.70Mb
+      - CN_395 |10.89Mb
+      - CN_416 |11.16Mb
+      - CN_382 |10.89Mb
+      - CN_398 |10.70Mb
+      - HK-Openit.ml
+      - CN_379 | 8.34Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_8du.shop 27
-      - JP-Openit.ml
-      - KR-Openit.ml
-      - HK-Openit.ml
-      - CN_8du.shop 3
-      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - 🇨🇳
       - CN_8du.shop 36
-      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
+      - CN_423 | 9.90Mb
+      - TW_1488 | 1.66Mb
+      - 🇨🇳 2
+      - 🇨🇳 3
+      - 🇨🇳 4
+      - CN_412 |10.48Mb
+      - CN_415 |10.72Mb
+      - CN_410 | 9.68Mb
+      - CN_405 |10.70Mb
+      - CN_395 |10.89Mb
+      - CN_416 |11.16Mb
+      - CN_382 |10.89Mb
+      - CN_398 |10.70Mb
+      - HK-Openit.ml
+      - CN_379 | 8.34Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +108,23 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_8du.shop 27
-      - JP-Openit.ml
-      - KR-Openit.ml
-      - HK-Openit.ml
-      - CN_8du.shop 3
-      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - 🇨🇳
       - CN_8du.shop 36
-      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
+      - CN_423 | 9.90Mb
+      - TW_1488 | 1.66Mb
+      - 🇨🇳 2
+      - 🇨🇳 3
+      - 🇨🇳 4
+      - CN_412 |10.48Mb
+      - CN_415 |10.72Mb
+      - CN_410 | 9.68Mb
+      - CN_405 |10.70Mb
+      - CN_395 |10.89Mb
+      - CN_416 |11.16Mb
+      - CN_382 |10.89Mb
+      - CN_398 |10.70Mb
+      - HK-Openit.ml
+      - CN_379 | 8.34Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +135,68 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_8du.shop 27
-      - JP-Openit.ml
-      - KR-Openit.ml
-      - HK-Openit.ml
-      - CN_8du.shop 3
-      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - 🇨🇳
       - CN_8du.shop 36
-      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
+      - CN_423 | 9.90Mb
+      - TW_1488 | 1.66Mb
+      - 🇨🇳 2
+      - 🇨🇳 3
+      - 🇨🇳 4
+      - CN_412 |10.48Mb
+      - CN_415 |10.72Mb
+      - CN_410 | 9.68Mb
+      - CN_405 |10.70Mb
+      - CN_395 |10.89Mb
+      - CN_416 |11.16Mb
+      - CN_382 |10.89Mb
+      - CN_398 |10.70Mb
+      - HK-Openit.ml
+      - CN_379 | 8.34Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_8du.shop 27
-      - JP-Openit.ml
-      - KR-Openit.ml
-      - HK-Openit.ml
-      - CN_8du.shop 3
-      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - 🇨🇳
       - CN_8du.shop 36
-      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
+      - CN_423 | 9.90Mb
+      - TW_1488 | 1.66Mb
+      - 🇨🇳 2
+      - 🇨🇳 3
+      - 🇨🇳 4
+      - CN_412 |10.48Mb
+      - CN_415 |10.72Mb
+      - CN_410 | 9.68Mb
+      - CN_405 |10.70Mb
+      - CN_395 |10.89Mb
+      - CN_416 |11.16Mb
+      - CN_382 |10.89Mb
+      - CN_398 |10.70Mb
+      - HK-Openit.ml
+      - CN_379 | 8.34Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_8du.shop 27
-      - JP-Openit.ml
-      - KR-Openit.ml
-      - HK-Openit.ml
-      - CN_8du.shop 3
-      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - 🇨🇳
       - CN_8du.shop 36
-      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
+      - CN_423 | 9.90Mb
+      - TW_1488 | 1.66Mb
+      - 🇨🇳 2
+      - 🇨🇳 3
+      - 🇨🇳 4
+      - CN_412 |10.48Mb
+      - CN_415 |10.72Mb
+      - CN_410 | 9.68Mb
+      - CN_405 |10.70Mb
+      - CN_395 |10.89Mb
+      - CN_416 |11.16Mb
+      - CN_382 |10.89Mb
+      - CN_398 |10.70Mb
+      - HK-Openit.ml
+      - CN_379 | 8.34Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +212,23 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_8du.shop 27
-      - JP-Openit.ml
-      - KR-Openit.ml
-      - HK-Openit.ml
-      - CN_8du.shop 3
-      - Relay_🇨🇳CN-🇰🇷KR_35 | 7.82Mb
+      - 🇨🇳
       - CN_8du.shop 36
-      - Relay_🇨🇳CN-🇷🇺RU_46 |10.28Mb
+      - CN_423 | 9.90Mb
+      - TW_1488 | 1.66Mb
+      - 🇨🇳 2
+      - 🇨🇳 3
+      - 🇨🇳 4
+      - CN_412 |10.48Mb
+      - CN_415 |10.72Mb
+      - CN_410 | 9.68Mb
+      - CN_405 |10.70Mb
+      - CN_395 |10.89Mb
+      - CN_416 |11.16Mb
+      - CN_382 |10.89Mb
+      - CN_398 |10.70Mb
+      - HK-Openit.ml
+      - CN_379 | 8.34Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
