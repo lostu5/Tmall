@@ -9515,6 +9515,7 @@ rules:
  - DOMAIN-SUFFIX,twitpic.com,🔰 节点选择
  - DOMAIN-SUFFIX,twitter.com,🔰 节点选择
  - DOMAIN-SUFFIX,vine.co,🔰 节点选择
+ - DOMAIN-SUFFIX,ok.ru,🔰 节点选择
  - DOMAIN-SUFFIX,wikileaks.org,🔰 节点选择
  - DOMAIN-SUFFIX,wikimapia.org,🔰 节点选择
  - DOMAIN-SUFFIX,wikimedia.org,🔰 节点选择
